@@ -16,6 +16,7 @@ class Triangle
     # binding.pry
     return :equilateral if sides.first == sides[1] && sides[1] == sides.last
     return :isosceles if sides[1] == sides.last || sides.first == sides.last || sides.first == sides[1]
+    return :scalene if sides.uniq.length == 3
   end
   
 end
