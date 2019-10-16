@@ -13,7 +13,7 @@ class Triangle
   
   def kind
     sides = [@side1, @side2, @side3]
-    binding.pry
+    # binding.pry
     return :equilateral if sides.first == sides[1] && sides[1] == sides.last
     return :isosceles if sides[1] == sides.last
   end
