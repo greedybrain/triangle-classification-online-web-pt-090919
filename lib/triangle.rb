@@ -11,9 +11,8 @@ class Triangle
   
   def kind
     sides = [@side1, @side2, @side3]
-    if sides.all?{|side| side > 0}
-      :equilateral if sides.first == sides[1] && sides[1] == sides.last
-    end
+    :equilateral if sides.first == sides[1] && sides[1] == sides.last
+    :isosceles if sides[1] == sides.last
   end
   
 end
